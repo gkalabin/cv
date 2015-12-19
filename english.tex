@@ -1,0 +1,77 @@
+%% Copyright 2013 BarD Software s.r.o
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+% === Стандартный moderncv и стандартные темы ===
+% === Компилируются pdflatex'ом               ===
+% \documentclass[11pt,a4paper]{moderncv}
+% \moderncvtheme[grey]{classic}
+% \usepackage[utf8]{inputenc}
+% \usepackage[T2A]{fontenc}
+% \usepackage[english,russian]{babel}
+
+% === moderncv модифицированный для использования с XeLaTeX и фирменная тема ===
+\documentclass[11pt,a4paper]{moderncv-xetex}
+\moderncvtheme[grey]{papeeria}
+
+\usepackage{xcolor}
+\newfontfamily{\cyrillicfonttt}{CMU Typewriter Text}
+\usepackage[a4paper,margin=1in]{geometry}
+
+% Шапка
+\firstname{Grigory}\familyname{Kalabin}
+% \title{сюда можно вписать что-нибудь в качестве заголовка}
+\mobile{+7-911-707-6329}
+%\phone{}
+\email{grigory.kalabin@gmail.com}
+%\extrainfo{}
+\quote{A software developer}
+
+%\nopagenumbers{}
+
+\begin{document}
+\maketitle
+
+% ОПЫТ РАБОТЫ --------------------------------------------------------
+\cventry{Jul 2015 to present}{Moscow}{Lazada}{Senior GO Developer}{}
+    {Lazada is a huge web shop in Southeast Asia and the market leader in the countries it operates. I am a member of a team writing backend code in golang. We always have to keep in mind that there are many users of the website and it should work under heavy load. Especially, we have to be sure that any promotions go smoothly and any increase of visits doesn't lead to downtime. I spent some time on tweaking the monitoring system we use, handling tracking provides, browser detection by user agent and some other things. Most of the tasks I do involve communication with other teams from different countries and even writing code for other teams.}
+    
+\cventry{Nov 2012--Jul 2015}{Saint-Petersburg}{DataConsult}{Developer}{}
+    {We were working on an IDE for scientists and currently it's just an online \LaTeX editor. I was focused on improving it, so I was involved in writing application logic code (client and server-side), writing scripts for our environment, html markup, fixing bugs in libraries we use and doing many other things. Check this out at \url{papeeria.com}}
+
+\cventry{Sep 2013--Jun 2014}{St.~Petersburg National Research University of Information Technology, Mechanics \& Optics}{Faculty of Natural Sciences}{Department of Higher Mathematics}{Lab class instructor}
+    {I taught one lab a week and shared my experience with my students. The name of the course was "Algorithms and data structures". I tried to show my students what real-world programming is all about. Some of the homework assignments I gave my students are available at \url{obolshakova.ru/students/tasks.xml?term=8}}
+    
+\cventry{Apr 2012--Sep 2012}{Perm (on a remote basis)}{Pizzburg}{Developer}{}
+    {I wrote a workstation for managing orders in a pizza delivery company. The app was based on Java EE stack and Spring framework (MVC, security, etc). I did everything ranging from application architecture to deployment and setup. This project was challenging, because I was expected to release it within a reasonable amount of time. You can take a look at its source code at \url{bitbucket.org/gkalabin/pizzburg-workstation}}
+    
+\cventry{Jun 2011--Nov 2012}{Saint-Petersburg}{Lanit-Tercom}{Junior java developer}{}
+    {I was a part-time developer with responsibility for investigating what technologies were optimal for our needs. I also wrote a few android applications.}
+    
+\cventry{Oct 2010--May 2011}{Saint-Petersburg}{Lanit-Tercom}{Student project member}{}
+    {
+    I was on the team of eight students who wrote a quite successful android application for geocaching.su from ground-up. We were supervised by two experienced developers who reviewed our commits and taught us many new things. We did everything: we wrote the code, designed the user interface and made presentations about the project. The app is quite popular with over 10000 downloads. You can find the project page at \url{code.google.com/p/android-geocaching}}
+
+
+% ТЕХНИЧЕСКИЕ НАВЫКИ -------------------------------------------------
+\section{Technologies}
+\cvline{Languages}{Russian, English, Java, Go, Coffeescript (Javascript), Bash, Scala, Python}
+\cvline{Anything}{OSX, Linux, Docker, git, selenium, aws}
+
+% ОБРАЗОВАНИЕ --------------------------------------------------------
+\section{Education}
+\cvline{2008\,--\,2013}{Five-year degree (Level 7 in ISCED classification of UNESCO 2011)
+\newline
+\small{Saint-Petersburg State University, Mathematics and Mechanics faculty}
+}
+
+%\newpage
+% ДИПЛОМНАЯ РАБОТА ---------------------------------------------------
+% \section{Graduation thesis}
+% \cvline{Title}{\emph{Short-time Walsh transform}}
+% \cvline{Supervisor}{S.M.~Masharsky}
+% \cvline{Source}{\href{http://papeeria.com/p/e5dd2ee4953959fb45672d7d11701e2a\#/thesis/diploma.tex}{http://papeeria.com/p/e5dd2ee4953959fb45672d7d11701e2a} (Russian)}
+
+\end{document}
