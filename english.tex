@@ -4,7 +4,6 @@
 % conditions of the LaTeX Project Public License version 1.3c,
 % available at http://www.latex-project.org/lppl/.
 
-% === Компилируются pdflatex'ом               ===
 % \documentclass[11pt,a4paper]{moderncv}
 % \moderncvtheme[grey]{classic}
 % \usepackage[utf8]{inputenc}
@@ -18,37 +17,111 @@
 \usepackage[a4paper,margin=1in]{geometry}
 
 \firstname{Gregory}\familyname{Kalabin}
-\mobile{+44-7-949-27-37-28}
+\mobile{+44-7949-273-728}
 %\phone{}
 \email{gregory@kalabin.net}
 %\extrainfo{}
-\quote{Software Developer}
+\quote{Software Engineering Leader with 15+ years of experience}
 
 %\nopagenumbers{}
 
 \begin{document}
 \maketitle
 
-% ОПЫТ РАБОТЫ --------------------------------------------------------
+\cventry{Since April 2025}{Google}{Software Engineering Manager}{}{}
+{• Manager of Software Engineering team in Site Reliability of Google Compute Engine.
+\\
+• Owning the team charter, roadmap and execution. Close partnership with the stakeholders to align on the progress and proactively address risks.
+\\
+• Performance management of Software Engineers. Ran multiple successful promotion cases for my team.
+\\
+• Execution owner of critical cross organisation projects. As a result, supported organic growth of 50+ services owned by dozens of teams.
+\\
+• Hands on Software Development on the team.
+\\
+• Member of oncall rotation defending whole of the GCE API reliability.
+\\
+• Coached and mentored Software Engineers in my team and beyond.
+}
 
-\cventry{March 2017 to present}{Amsterdam}{Booking.com}{Senior Fullstack Software Developer and Team Lead}{}
-    {Booking.com is one of the world’s leading digital travel companies. I was leading a team of developers working on online experiments infrastructure and scaling it to support the company move to SOA. The A/B testing is used by most of the product teams in the company and we had to build a scalable and reliable system which was easy to use.}
+\cventry{October 2020 to April 2025}{Google}{Senior Software Engineer in Site Reliability}{}{}
+{
+• Software Engineer in Site Reliability of Google Compute Engine.
+\\
+• Tech Lead of an SRE team, owned the roadmap and execution in the team in partnership with the manager of the team.
+\\
+• Landed projects spanning a number of developer organisations: designed new services in the GCE Control Plane and worked across the organisation to enable migration of all of the GCE API traffic to them. Resolved conflicts and aligned on common solutions.
+\\
+• Improved capacity management of the GCE Control Plane, developed tools used across all of Google to safely adjust deployment size.
+\\
+• Led multiple major outages as the Incident Commander to resolution: mitigated impact, debugged the problem, wrote postmortem and worked with the stakeholders to address discovered reliability gaps.
+\\
+• Coached and mentored other Software Engineers.
+}
 
-\cventry{Jul 2015 to Feb 2017}{Moscow}{Lazada}{Senior GO Developer}{}
-    {Lazada is one of the biggest web shops in Southeast Asia and the market leader in the countries it operates. Due to the local market nature we had to make an extremely scalabe system being able to handle spikes of 10-20 times usual traffic. I was not only just a developer, but I partnered with teams in other countries, so we can collaborate efficiently. As a developer I worked on providing core libraries for the whole company (for example, configuration library) and building a frontend application server.}
-    
-\cventry{Nov 2012--Jul 2015}{Saint-Petersburg}{Papeeria.com}{Developer}{}
-    {Together with 2 other developers I was working on building a real IDE (Integrated Development Environment) for scientists. Being a very small team we worked on everything ranging from devops and deployment to UX and client side development. Among the things I personally worked on there are collaborative text editing, sandboxing of LaTeX compilation and git integration}
 
-\cventry{Sep 2013--Jun 2014}{St.~Petersburg National Research University of Information Technology, Mechanics \& Optics}{}{}{Lab class instructor}
-    {I was a lab class instructor for course "Algorithms and data structures". During my time in the role, I spent a lot of time with students doing hands on programming and I tried my best to show them what's real world programming is like.}
+\cventry{April 2018 to July 2020}{Booking.com}{Software Engineering Manager}{}{}
+{
+Held a combined role of Software Engineering Manager and Senior Software Developer in which I directly managed a team of Software Engineers alongside delivering hands on work on the team.
+\\
+\\
+As a people manager:
+\\
+ • Managed a team of software engineers.
+\\
+ • Provided mentoring and coaching for the team members to help succeed in their career.
+\\
+ • Did performance management: prepared and participated in the calibration sessions and delivered perf results.
+\\
+ • Hired talent for the team
+\\
+\\
+As a tech lead and a senior software engineer:
+\\
+ • Designed and owned the execution of the team roadmap. Collected requirements from the stakeholders. Supported team members in the execution of the roadmap and resolving blockers they had.
+\\
+ • Expanding existing experimentation platform to support microservices. We launched the first A/B test in Java and JavaScript and onboarded the biggest Java service (HotelPage API) on A/B testing platform.
+\\
+ • Building highly scalable system which handled 400k+ requests per second.
+\\
+ • Designing, writing and maintaining client libraries for Java, JavaScript and Perl.
+\\
+ • Partnered with Product Managers to align the product and technical roadmaps.
+}
+
+
+\cventry{March 2017 to April 2018}{Booking.com}{Full Stack Software Developer}{}{}
+{
+Full Stack Software Developer on Partner Experiments Team responsible for A/B testing platform for Booking.com partners (e.g. hotels or property managers):
+\\
+ • Extending the existing A/B testing platform to Booking.com partners.
+\\
+ • Collaboration with data scientists on building trustworthy metrics for analysing changes in partner behaviour.
+\\
+ • Enabling customer support metrics for A/B tests for all of the product teams.
+\\
+ • Maintaining data pipelines generating metrics and minimising the data loss.
+\\
+ • Partnering with product management and data science teams to develop the A/B testing platform.
+}
     
-\cventry{Jun 2011--Nov 2012}{Saint-Petersburg}{Lanit-Tercom}{Junior java developer}{}
-    {I was a part-time developer working for various company clients. During my time in the company I worked on two android applications: a social network and interactive map for a big conference. Also I was researching various new technologies to be adopted by the company, for example java application servers and benchmarking them.}
+\cventry{July 2015 to March 2017}{Lazada}{Senior Software Developer}{}{}
+{
+Senior Software Developer developing microservices in Golang.
+\\
+ • Developing frontend server in Golang serving pages within 50ms and handling 100+ QPS.
+\\
+ • Profiling and debugging performance bottlenecks in golang applications.
+\\
+ • Designing and implementing config distribution library.
+}
     
-\cventry{Oct 2010--May 2011}{Saint-Petersburg}{Lanit-Tercom}{Student project member}{}
-    {
-    I was on the team of eight students who wrote an android application for geocaching.su from ground-up. We were supervised by two experienced developers who helped us with system design and code review. We did everything: from talking to the API provider and writing the app de to working on UX. The app has more than 50000 downloads and 4.5 average rating. You can find the app at \url{https://play.google.com/store/apps/details?id=su.geocaching.android.ui}}
+\cventry{November 2012 to July 2015}{Papeeria.com}{Full Stack Developer}{}{}
+{Full Stack Developer in a 3-people startup for changing the way people write scientific papers.}
+
+\cventry{June 2011 to November 2012}{Lanit-Tercom}{Junior Software Engineer}{}{}
+{Android developer, contributor to two major android apps the company was developing for external clients.
+}
 
 
 % ТЕХНИЧЕСКИЕ НАВЫКИ -------------------------------------------------
