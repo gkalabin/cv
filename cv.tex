@@ -1,0 +1,130 @@
+%% Copyright 2013 BarD Software s.r.o
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+% \documentclass[11pt,a4paper]{moderncv}
+% \moderncvtheme[grey]{classic}
+% \usepackage[utf8]{inputenc}
+% \usepackage[T2A]{fontenc}
+% \usepackage[english,russian]{babel}
+\documentclass[11pt,a4paper]{moderncv-xetex}
+\moderncvtheme[grey]{papeeria}
+
+\usepackage{xcolor}
+\newfontfamily{\cyrillicfonttt}{CMU Typewriter Text}
+\usepackage[a4paper,margin=1in]{geometry}
+
+\firstname{Gregory}\familyname{Kalabin}
+\mobile{+44-7949-273-728}
+%\phone{}
+\email{gregory@kalabin.net}
+\address{London, UK}{}{}
+\quote{
+    \url{linkedin.com/in/gkalabin/}\\
+    \url{github.com/gkalabin}
+}
+
+%\nopagenumbers{}
+
+\begin{document}
+\setlength{\parskip}{2em}
+\maketitle
+
+Software Engineering Leader with 15 years of experience spanning IC and management roles at Google, Booking.com, and startups. Proven track record of scaling high-throughput backend systems (1M+ QPS), leading reliability projects for global cloud infrastructure (GCE), and building high-performing engineering teams. Deep expertise in Golang, Java, Kubernetes, and distributed systems.
+
+\cventry{Since April 2025}{Google}{Software Engineering Manager}{Google Compute Engine}{}
+{
+• Defined and executed multi-year engineering roadmap for GCE Control Plane Reliability to uphold 99.95\% global availability target.
+\\
+• Built a high performing team of 7 Software Engineers: hired talent and supported career development that resulted in 2 successful promotions.
+\\
+• Led a cross-organizational infrastructure initiative, unlocking deployments for 20+ engineering teams and enabling the organic growth of 50+ services.
+\\
+• Built infrastructure to enforce best reliability practices across 50+ services to enable the services handle 1M+ QPS.
+\\
+• Maintaining hands-on IC contributions, adopting new tools and staying in touch with what people on the team are experiencing.
+\\
+• Member of oncall rotation responsible for the reliability of the GCE API defending 99.95\% availability globally. Incident Commander of 2 global outages.
+}
+
+\cventry{October 2020 to April 2025}{Google}{Senior Software Engineer in Site Reliability}{Google Compute Engine}{}
+{
+• Tech Lead of an SRE team, owned the team roadmap and execution together with the manager.
+\\
+• Landed multi-year projects involving 4 separate developer organisations. Designed and developed new services in the GCE Control Plane and worked across the organisation to unblock GCE API traffic migration.
+\\
+• Developed a capacity management tool utilized across Google, preventing 10+ major outages by surfacing relevant capacity changes to the teams.
+\\
+• Incident Commander of major outages: mitigated impact, involved and coordinated with Google infrastructure teams during the incident, wrote postmortem and made sure the followups were addressed.
+\\
+• Coached and mentored other Software Engineers.
+}
+
+
+\cventry{April 2018 to July 2020}{Booking.com}{Software Engineering Manager}{}{}
+{
+Held a combined role of Software Engineering Manager and Senior Software Developer: directly managed a team of Software Engineers alongside delivering hands on work.
+\\
+\\
+ • Managed a team of software engineers. Provided mentoring and coaching for the team members, owned multiple successful promotions and hired talent.
+\\
+ • Designed and executed multi-quarter team roadmap. Partnered with the stakeholders and platform customers.
+\\
+ • Scaled the experimentation platform to microservices. Launched the first A/B tests in Java and JavaScript. Onboarded the biggest Java service onto the A/B testing platform.
+\\
+ • Integrated A/B testing platform into Booking.com's Kubernetes infrastructure. Built and owned a sidecar running alongside every service in the company.
+\\
+ • Built highly scalable system which handled 400k+ requests per second.
+\\
+ • Designed, wrote and maintained client libraries for Java, JavaScript and Perl.
+}
+
+
+\cventry{March 2017 to April 2018}{Booking.com}{Full Stack Software Developer}{}{}
+{
+Full Stack Software Developer on Partner Experiments Team responsible for A/B testing platform for Booking.com partners:
+\\
+ • Extended the existing A/B testing platform to Booking.com partners.
+\\
+ • Collaborated with data scientists on building trustworthy metrics for analysing changes in partner behaviour.
+\\
+ • Enabled customer support metrics for A/B tests for all of the product teams.
+\\
+ • Maintained data pipelines generating metrics and minimising the data loss.
+\\
+ • Partnered with product management and data science teams to develop the A/B testing platform.
+}
+    
+\cventry{July 2015 to March 2017}{Lazada}{Senior Software Developer}{}{}
+{
+Senior Golang Software Developer.
+\\
+ • Developed a highly performant frontend Golang server, reducing page latency to sub-50ms.
+\\
+ • Profiled and debugged performance bottlenecks in Golang applications.
+\\
+ • Designed and implemented config distribution library.
+}
+    
+\cventry{November 2012 to July 2015}{Papeeria.com}{Full Stack Developer}{}{}
+{Full Stack Developer in a 3-person startup changing the way people write scientific papers.}
+
+\cventry{June 2011 to November 2012}{Lanit-Tercom}{Junior Software Engineer}{}{}
+{Android developer, contributor to two major android apps the company was developing for external clients.
+}
+
+
+\section{Technologies}
+\cvline{Skills}{Technical Leadership, Distributed Systems, Kubernetes}
+\cvline{Languages}{Java, Go, Python, Typescript/Javascript, Perl}
+
+
+\section{Education}
+\cvline{2008\,--\,2013}{Specialist (Master's equivalent)
+\newline
+\small{Saint-Petersburg State University, Applied Mathematics}
+}
+
+\end{document}
